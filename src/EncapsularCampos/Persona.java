@@ -10,6 +10,13 @@ package EncapsularCampos;
  * @author lprie
  */
 public class Persona {
+    
+    private long id;
+    private String nombre;
+    private String apellidos;
+    private int edad;
+    private String direccion;
+    private String email;
 
     /**
      * @return the id
@@ -94,10 +101,5 @@ public class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
-    private long id;
-    private String nombre;
-    private String apellidos;
-    private int edad;
-    private String direccion;
-    private String email;
 }
+
