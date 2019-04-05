@@ -10,6 +10,7 @@ package EncapsularCampos;
  * @author lprie
  */
 public class Persona {
+	//hola
     long id;
     String nombre;
     String apellidos;
