@@ -12,11 +12,11 @@ import java.util.ArrayList;
  * @author lprie
  */
 public class AnalizadorDatos {
-    ArrayList<String> datos;
     static final boolean CORRECTOS = true;
     static final boolean INCORRECTOS = false;
+    ArrayList<String> datos;
 
-    private void cargarDatos() {
+    protected void cargarDatos() {
         //codigo
     }
 
