@@ -11,10 +11,7 @@ import java.util.ArrayList;
  *
  * @author lprie
  */
-public class AnalizadorDatos {
-    ArrayList<String> datos;
-    static final boolean CORRECTOS = true;
-    static final boolean INCORRECTOS = false;
+public class AnalizadorDatos extends SuperAnalizadorDatos {
 
     private void cargarDatos() {
         //codigo
