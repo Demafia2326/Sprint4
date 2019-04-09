@@ -13,16 +13,22 @@ import java.io.File;
  */
 public class RenombrarElementos {
 
+    private void imprimirArchivosRe(String cadena) {
+        imprimirArchivos(cadena);
+    }
+
     private void imprimirArchivos(String cadena) {
         File archivo = new File(cadena);
         if (archivo.isFile()) {
             System.out.println(archivo.getPath());
         } else if (archivo.isDirectory()) {
-          for(String carpeta : archivo.list())
-             imprimirArchivos(cadena + archivo.separator + carpeta);
+            for (String carpeta : archivo.list()) {
+                imprimirArchivos(cadena + archivo.separator + carpeta);
+            }
         }
-        if (!archivo.exists())
-          System.out.println(cadena + " does not exist.");
+        if (!archivo.exists()) {
+            System.out.println(cadena + " does not exist.");
+        }
     }
     
 }
