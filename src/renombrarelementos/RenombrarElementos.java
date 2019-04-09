@@ -8,7 +8,7 @@ package renombrarelementos;
 import java.io.File;
 
 /**
- *
+ * Hola
  * @author Lorenzo
  */
 public class RenombrarElementos {
