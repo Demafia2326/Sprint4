@@ -17,7 +17,7 @@ public class RenombrarElementos {
         File archivo = new File(cadena);
         if (archivo.isFile()) {
             System.out.println(archivo.getPath());
-        } else if (archivo.isDirectory()) {
+        } else if (!archivo.isDirectory()) {
           for(String carpeta : archivo.list())
              imprimirArchivos(cadena + archivo.separator + carpeta);
         }
